@@ -1,1 +1,171 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+$white:#fff;
+
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.c-p {
+  cursor: pointer !important;
+}
+
+.mr-15 {
+  margin-right: 15px !important;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.main-content {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 90px;
+}
+
+.top-header {
+  display: flex;
+  justify-content: flex-end;
+
+  a {
+    color: rgba(0, 0, 0, 0.87) !important;
+    margin-right: 25px !important;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.top-icons {
+  display: flex !important;
+  justify-content: end;
+  align-items: flex-end;
+
+  .mat-list-item-content {
+    padding: 0 !important;
+  }
+}
+
+button {
+  background-color: #f2f2f2 !important;
+  border-color: transparent !important;
+
+  &:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) !important;
+    background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1) !important;
+    background-color: #f8f8f8 !important;
+    border: 1px solid #c6c6c6 !important;
+    color: #222 !important;
+  }
+}
+
+form {
+  width: 50%;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  border-radius: 8px;
+
+  .mat-focused .mat-form-field-label {
+    color: $white !important;
+  }
+
+  .mat-input-element {
+    caret-color: $white !important;
+  }
+
+  .mat-form-field-ripple {
+    background-color: $white !important;
+  }
+
+  .mat-form-field {
+    width: 100%;
+  }
+
+  img {
+    width: 18px;
+    padding-right: 15px;
+    padding-top: 5px;
+  }
+
+  .mat-form-field-infix {
+    border-top: 0px !important;
+  }
+
+  .mat-form-field .mat-form-field-flex {
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    height: 48px;
+    align-items: center;
+
+    &:hover {
+      box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
+      border-color: rgba(223, 225, 229, 0);
+    }
+
+    .mat-icon {
+      padding-left: 15px;
+      color: #9aa0a6;
+      padding-top: 5px;
+      padding-right: 5px;
+    }
+  }
+
+  .mat-form-field-underline {
+    display: none !important;
+  }
+}
+
+ul.language {
+  margin-top: 30px;
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-self: center;
+  flex-wrap: wrap;
+  padding: 0px;
+
+  li {
+    line-height: 16px;
+    padding: 0 6px;
+
+    a {
+      color: #1a0eab;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.mat-toolbar {
+  color: rgba(0, 0, 0, .54) !important;
+  position: fixed;
+  bottom: 0;
+  font-size: 16px !important;
+  height: 50px !important;
+}
+
+@media(max-width:768px) {
+  form {
+    width: 95%;
+  }
+
+  ul.language li {
+    padding: 0 10px;
+  }
+}
